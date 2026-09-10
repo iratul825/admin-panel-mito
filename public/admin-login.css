@@ -1,0 +1,30 @@
+.admin-login-shell {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: radial-gradient(circle at 20% 10%, #f6e9e3 0, transparent 34%), linear-gradient(145deg, #fffdfb, #f3eee9);
+}
+
+.admin-login-card {
+  width: min(460px, 100%);
+  padding: 42px;
+  background: #fffdfb;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.admin-login-card .studio-logo { padding: 0; margin-bottom: 44px; }
+.admin-login-card h1 { margin: 12px 0; font-size: 2.7rem; letter-spacing: -.05em; }
+.admin-login-card > p { margin-bottom: 28px; font-size: .9rem; line-height: 1.8; }
+.admin-login-card form { display: grid; gap: 16px; }
+.admin-login-card .btn { width: 100%; }
+.admin-login-card > .text-link { display: inline-flex; margin-top: 24px; font-size: .78rem; }
+.admin-login-card > .text-link svg { width: 15px; transform: rotate(180deg); }
+
+@media (max-width: 520px) {
+  .admin-login-shell { padding: 14px; }
+  .admin-login-card { padding: 30px 24px; }
+  .admin-login-card h1 { font-size: 2.25rem; }
+}

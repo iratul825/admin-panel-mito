@@ -1,0 +1,19 @@
+{
+  "name": "admin-panel-mito",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.19.0",
+  "scripts": {
+    "build": "node scripts/write-seed.mjs",
+    "dev": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check public/app.js && node --check public/admin.js && node --check public/store.js && node --check public/domain.js && node --check api/auth.js && node --check api/state.js && node --check api/admin-record.js && node --check api/chat.js && node --check api/_lib/admin-records.js && node --check api/_lib/db.js && node --check api/_lib/request.js"
+  },
+  "dependencies": {
+    "@upstash/redis": "^1.38.4"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
